@@ -4,12 +4,22 @@
 GET https://localhost:7015/api/tarefa/listar
 
 ### Criar Tarefa ###
-POST {{base_url}}/cadastrar
+POST https://localhost:7015/api/tarefa/cadastrar
 Content-Type: application/json
 
 {
   "Titulo": "Compras no Supermercado",
   "Descricao": "1. Fazer lista de compras: pão, leite, ovos, frutas, vegetais",
-  "CategoriaId": 4
+  "CategoriaId": 3
+}
+###
+PATCH https://localhost:7015/api/tarefa/alterar/1
+Content-Type: application/json
+
+{
+  "tarefaId": 1,
+  "Titulo": "teste",
+  "Descricao": "1. Fazer lista de compras: pão, leite, ovos, frutas, vegetais",
+  "CategoriaId": 2
 }
 
