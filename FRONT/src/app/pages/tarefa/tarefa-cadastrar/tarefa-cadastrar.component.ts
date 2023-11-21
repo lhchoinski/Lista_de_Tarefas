@@ -43,7 +43,6 @@ export class TarefaCadastrarComponent {
       Titulo: this.Titulo,
       Descricao: this.Descricao,
       categoriaId: this.categoriaId,
-      CriadoEm: ""
     };
 
     this.client
